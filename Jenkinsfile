@@ -23,14 +23,14 @@ pipeline {
             steps {
                 snDevOpsStep()
                 snDevOpsChange()
-                sh "mvn test"
+                sh "mvn test -Dtest=AppTest"
             }
         }
         stage('Integration Test') {
             steps {
                 snDevOpsStep()
                 snDevOpsChange()
-                sh "mvn test"
+                sh "mvn test -Dtest=AddTest"
             }
         }
         stage('Deploy to Dev') {
