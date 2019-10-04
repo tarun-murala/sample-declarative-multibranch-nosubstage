@@ -1,8 +1,3 @@
-# sample-declarative-multibranch-nosubstage
-Declarative Multibranch Pipeline With No Sub-Stages
-
-
-```
 pipeline {
     agent {
         tools { 
@@ -68,4 +63,3 @@ pipeline {
         }
     }
 }
-```
